@@ -131,4 +131,8 @@ type Issue struct {
 }
 
 
-var UrlGit string = fmt.Sprintf("https://api.github.com/repos/%s/issues", os.Getenv("GIT_REPO"))
+// var UrlGit string = fmt.Sprintf("https://api.github.com/repos/%s/issues", os.Getenv("GIT_REPO"))
+
+const (
+	UrlGit string = ("https://api.github.com/repos/apache/airflow/issues")
+)
