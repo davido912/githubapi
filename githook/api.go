@@ -29,7 +29,7 @@ type GitHook struct {
 // marshal the json data first
 func (gh *GitHook) auth(jsonData []byte) *http.Request {
 	req, err := http.NewRequest(gh.Method, gh.Endpoint, bytes.NewReader(jsonData))
-	req.Header.Set("Authorization", "token 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")
+	req.Header.Set("Authorization", "token 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")
 	RaiseError(err)
 	return req
 }
@@ -130,7 +130,5 @@ type Issue struct {
 	State  string `json:"state"`
 }
 
-const (
-	UrlGit string = "https://api.github.com/repos/davido912/data-proc/issues"
-	// UrlGit string = "https://api.github.com/repos/apache/airflow/issues"
-)
+
+var UrlGit string = fmt.Sprintf("https://api.github.com/repos/%s/issues", os.Getenv("GIT_REPO"))
