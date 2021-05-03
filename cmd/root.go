@@ -36,6 +36,7 @@ var getIssue = &cobra.Command{
 		if cmd.Flag(allFlag).Changed {
 			gh.GetIssues()
 		}
+		
 	},
 }
 
