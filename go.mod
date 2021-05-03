@@ -1,4 +1,4 @@
-module github.com/davido912/githubapitest
+module github.com/davido912/githubapi
 
 go 1.16
 
