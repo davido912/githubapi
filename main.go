@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/davido912/githubapi/cmd"
+	"github.com/davido912/githubapitest/cmd"
 )
 
 func main() {
