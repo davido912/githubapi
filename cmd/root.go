@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"githubapi/githook"
+	"github.com/davido912/githubapi/githook"
 	"io/ioutil"
 	"os"
 	"os/exec"

@@ -1,4 +1,4 @@
-module githubapi
+module github.com/davido912/githubapi
 
 go 1.16
 
